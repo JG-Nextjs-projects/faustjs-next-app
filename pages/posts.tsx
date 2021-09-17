@@ -8,8 +8,7 @@ export default function PostsPage() {
   return (
     <div>
       <h1>My posts</h1>
-      {posts.map((post,i) => {
-        console.log(post.id)
+      {posts.map((post) => {
         let postID = post.id
       return (
           <Post key={postID} post={post} />
